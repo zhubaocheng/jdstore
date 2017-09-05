@@ -24,6 +24,15 @@
       </div>
     </div>
 
+    <% if @product.image.present? %>
+      <span>目前的产品图</span><br>
+      <%= image_tag(@product.image.thumb.url)%>
+    <% end %>
+
+    <div class="group">
+      <%= f.input :image, as: :file%>  
+    </div>
+
     <%= f.submit '修改完成', class: 'btn btn-danger', data: { disable_with: '修改中...'}%>
   <% end %>
 </div>

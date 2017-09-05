@@ -24,6 +24,9 @@
       </div>
     </div>
 
+    <div class="group">
+      <%= f.input :image, as: :file %>
+    </div>
 
     <%= f.submit '上架商品', class: 'btn btn-danger', data: { disable_with: "上架中..." } %>
   <% end %>
