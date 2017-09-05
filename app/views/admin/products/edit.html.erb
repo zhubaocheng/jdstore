@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>修改商品</h2>
+
+  <%= simple_form_for [:admin, @product] do |f| %>
+
+    <div class="group">
+      <%= f.input :title, label: '产品名称'%>
+    </div>
+
+    <div class="group">
+      <%= f.input :description, label: '产品详情'%>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="group">
+          <%= f.input :quantity, label: '库存'%>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="group">
+          <%= f.input :price, label: '单价'%>
+        </div>
+      </div>
+    </div>
+
+    <%= f.submit '修改完成', class: 'btn btn-danger', data: { disable_with: '修改中...'}%>
+  <% end %>
+</div>
