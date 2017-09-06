@@ -7,4 +7,19 @@ class ApplicationController < ActionController::Base
       flash[:alert] = "你不是管理员，没有权限！"
     end
   end
+
+  helper_method :current_cart
+
+  def current_cart
+    @current_cart ||= find_cart
+  end
+
+  def find_cart
+    cart = Cart.find_by(id: session[:cart_id])
+    if cart.blanl?
+      cart = Cart.create
+    end
+    session[:cart_id] = cart_id
+    return cart
+  end
 end
