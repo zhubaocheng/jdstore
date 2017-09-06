@@ -12,7 +12,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
           <%= link_to carts_path do%>
-            <i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车(<%= current_cart.products.count %>)
+            <i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车<span class="badge"><%= current_cart.products.count %></span>
           <% end %>
         </li>
         <% if !current_user %>
