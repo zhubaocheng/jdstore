@@ -20,7 +20,11 @@
       ¥ <%= @product.price %>
     </div>
     <div class="cart-btn pull-left">
-      <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post, class: "btn btn-danger btn-lg")%>
+      <% if @product.quantity.present? && @product.quantity > 0 %>
+        <%= link_to(content_tag(:i, "加入购物车", class: "fa fa-cart-plus"), add_to_cart_product_path(@product), method: :post, class: "btn btn-lg btn-danger")%>
+      <% else %>
+        <h3><i class="fa fa-frown-o" aria-hidden="true"></i> 已售罄</h3>
+      <% end %>
     </div>
   </div>
 </div>
