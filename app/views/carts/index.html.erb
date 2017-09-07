@@ -58,7 +58,7 @@
     <hr>
     <%= link_to("一键清空", clean_carts_path, class: "btn btn-sm btn-danger pull-left", method: :delete, data: { confirm: "你确定要清空购物车吗？"})%>
     <div class="checkout clearfix pull-right">
-      <%= link_to("去结算", "#", method: :post, class: "btn btn-danger btn-lg")%>
+      <%= link_to("去结算", checkout_carts_path, method: :post, class: "btn btn-danger btn-lg")%>
     </div>
 
   </div>
