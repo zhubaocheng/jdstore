@@ -36,7 +36,7 @@ Product.create!(title: "小牛N1S电动车",
 Product.create!(title: "CherryG80-3000键盘",
   description: "瞬间让你爱上码字",
   price: 877,
-  quantity: 99,
+  quantity: 0,
   image: open("https://ws2.sinaimg.cn/large/006tNc79ly1fj9mzy5wc8j30m80m878s.jpg")
   )
 
