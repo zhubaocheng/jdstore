@@ -1,9 +1,19 @@
-<h2>订单列表</h2>
+<h2>订单列表
+  <small class="pull-right btn-group">
+    <%= link_to("所有订单", admin_orders_path, class: "btn btn-primary")%>
+    <%= link_to("未处理订单", admin_orders_path(:status => "pending"), class: "btn btn-danger")%>
+    <%= link_to("已处理订单", admin_orders_path(:status => "done"), class: "btn btn-success")%>
+  </small>
+</h2>
 
 <%= form_tag admin_orders_path, :method => :get do %>
+  <%= label_tag "订单编号"%>
+  <%= text_field_tag :ids %>
   <%= date_field_tag :date %>
   <%= submit_tag "搜索"%>
 <% end %>
+
+
 
 <table class="table table-bordered">
   <thead>
