@@ -1,5 +1,10 @@
 <h2>订单列表</h2>
 
+<%= form_tag admin_orders_path, :method => :get do %>
+  <%= date_field_tag :date %>
+  <%= submit_tag "搜索"%>
+<% end %>
+
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -30,3 +35,7 @@
 
   </tbody>
 </table>
+
+<div class="text-center">
+  <%= will_paginate @orders %>
+</div>

@@ -6,6 +6,13 @@ class Admin::OrdersController < ApplicationController
 
   def index
     @orders = Order.order("id DESC")
+
+    if params[:date].present?
+      d = Date.parse( params[:date])
+      @orders = @orders.where(:created_at => d.beginning_of_day..d.end_of_day)
+    end
+    
+    @orders = @orders.paginate(:page => params[:page], :per_page => 5)
   end
 
   def show
