@@ -7,6 +7,8 @@
 </h2>
 
 <%= form_tag admin_orders_path, :method => :get do %>
+  <%= label_tag "总价"%>
+  <%= text_field_tag :total %>
   <%= label_tag "订单编号"%>
   <%= text_field_tag :ids %>
   <%= date_field_tag :date %>
