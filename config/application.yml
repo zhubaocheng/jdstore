@@ -10,14 +10,22 @@
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
-production:
-  qiniu_access_key: HSKp1CF9pa5HV0ZUhhkzhwI7kyGlgFuPLvZYTGtc
-  qiniu_secret_key: jPnq-lzR1PnZvXCjOIVRAHbjcVGfFPgFm_ev-dLV
-  qiniu_bucket:  jdstore
-  qiniu_bucket_domain:  ovfvecsnf.bkt.clouddn.com
+ production:
+   qiniu_access_key: HSKp1CF9pa5HV0ZUhhkzhwI7kyGlgFuPLvZYTGtc  # 你的 qiniu AccessKey
 
-development:
-  qiniu_access_key: HSKp1CF9pa5HV0ZUhhkzhwI7kyGlgFuPLvZYTGtc
-  qiniu_secret_key: jPnq-lzR1PnZvXCjOIVRAHbjcVGfFPgFm_ev-dLV
-  qiniu_bucket:  jdstore
-  qiniu_bucket_domain:  ovfvecsnf.bkt.clouddn.com
+   qiniu_secret_key: jPnq-lzR1PnZvXCjOIVRAHbjcVGfFPgFm_ev-dLV  # 你的 qiniu SecretKey
+
+   qiniu_bucket: jdstore  # 你的 qiniu bucket
+
+   qiniu_bucket_domain: ovfvecsnf.bkt.clouddn.com  # 你的 qiniu bucket domain
+
+
+
+ development:
+   qiniu_access_key: HSKp1CF9pa5HV0ZUhhkzhwI7kyGlgFuPLvZYTGtc  # 你的 qiniu AccessKey
+
+   qiniu_secret_key: jPnq-lzR1PnZvXCjOIVRAHbjcVGfFPgFm_ev-dLV  # 你的 qiniu SecretKey
+
+   qiniu_bucket: jdstore  # 你的 qiniu bucket
+
+   qiniu_bucket_domain: ovfvecsnf.bkt.clouddn.com  # 你的 qiniu bucket domain
