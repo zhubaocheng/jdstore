@@ -32,6 +32,10 @@
                 <li>
                   <%= link_to(content_tag(:i, "个人订单", class: "fa fa-bars"), account_orders_path)%>
                 </li>
+              <% else %>
+                <li>
+                  <%= link_to(content_tag(:i, "个人订单", class: "fa fa-bars"), account_orders_path)%>
+                </li>
               <% end %>
               <li>
                 <%= link_to(content_tag(:i, "登出", class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete)%>

@@ -19,6 +19,10 @@
 
    qiniu_bucket_domain: ovfvecsnf.bkt.clouddn.com  # 你的 qiniu bucket domain
 
+   SEND_CLOUD_USER_NAME:  "Tommy_zbc_test_ddPjQu"
+
+   SEND_CLOUD_USER_KEY: "kWJ4nc3nv3fbHOQL"
+
 
 
  development:
@@ -29,3 +33,7 @@
    qiniu_bucket: jdstore  # 你的 qiniu bucket
 
    qiniu_bucket_domain: ovfvecsnf.bkt.clouddn.com  # 你的 qiniu bucket domain
+
+   SEND_CLOUD_USER_NAME:  "Tommy_zbc_test_ddPjQu"
+
+   SEND_CLOUD_USER_KEY: "kWJ4nc3nv3fbHOQL"
