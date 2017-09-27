@@ -35,6 +35,8 @@
         </td>
         <td>
           <%= link_to(content_tag(:i, "修改商品", class: "fa fa-pencil"), edit_admin_product_path(product))%>
+          <%= link_to("上移", move_up_admin_product_path(product), class: "fa fa-arrow-up", :method => :post)%>
+          <%= link_to("下移", move_down_admin_product_path(product), class: "fa fa-arrow-down", :method => :post)%>
         </td>
       </tr>
     <% end %>
